@@ -1,11 +1,11 @@
 # AutoMate
-AutoMate is a sample .NET 4.6.2 web application that forms the starting point for Dylan Beattie's training sessions about building distributed systems with C# and .NET.
+AutoMate is a sample web application that forms the starting point for Dylan Beattie's training sessions about building distributed systems with C# and .NET.
 
 ## Getting Started 
 
 1. Clone the Git repo
 2. Open `dotnet\AutoMate.sln` in Visual Studio
-3. Run
+3. Run the `AutoMate.WebApp` project
 
 That should bring up the AutoMate homepage; it's been tested in Visual Studio 2019 and 2022, and needs the .NET Framework 4.6.2 installed.
 
@@ -13,7 +13,7 @@ AutoMate is a very simple web app based around the idea of listing used cars for
 
 #### AutoMate.WebApp
 
-The web app project is built on .NET Framework 4.6.2 and ASP.NET. It has a set of ASP.NET MVC controllers which manage the web frontend, and a set of WebAPI controllers that provide the REST API we'll use during the workshop to query and modify records within the system.
+The web app project includes a set of ASP.NET MVC controllers which manage the web frontend, and a set of WebAPI controllers that provide the REST API we'll use during the workshop to query and modify records within the system.
 
 The web app uses the Autofac IoC container; services are configured in the `Application_Start` method in `global.asax.cs`
 
